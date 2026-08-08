@@ -44,6 +44,14 @@ curl -s -o /dev/null -w "%{http_code}\n" http://localhost:3000/nope
 curl -sk -o /dev/null -w "%{http_code}\n" https://localhost:3443/
 ```
 
+## Tests
+
+Unit tests (`node:test`, no dependencies):
+
+```bash
+node --test
+```
+
 ## Generate the self-signed certificate
 
 `certs/*.pem` are not committed (see `.gitignore`). Create them once:
